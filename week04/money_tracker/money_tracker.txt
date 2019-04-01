@@ -1,0 +1,20 @@
+=== 22-03-2019 ===
+760, Salary, New Income
+5.5, Eating Out, New Expense
+34, Clothes, New Expense
+41.79, Food, New Expense
+12, Eating Out, New Expense
+7, House, New Expense
+14, Pets, New Expense
+112.40, Bills, New Expense
+21.5, Transport, New Expense
+2200, N, New Expense
+=== 23-03-2019 ===
+50, Savings, New Income
+15, Food, New Expense
+200, Deposit, New Income
+5, Sports, New Expense
+2400, J, New Income
+40000, M, New Income
+=== 25-03-2016 ===
+2000, L, New Expense
