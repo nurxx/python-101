@@ -1,8 +1,5 @@
 from aggregated_money_tracker import *
 
-class TypeError(Exception):
-    pass
-
 class MoneyTracker:
     def __init__(self,aggregated_data):
         self.validate_input_params(aggregated_data)

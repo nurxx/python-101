@@ -5,6 +5,7 @@ def menu(money_tracker):
     choice = ''
     user_data = Parser.parse_money_tracker_data('money_tracker.txt')
     while choice is not '9':
+        
         print('Choose one of the following options to continue:')
         print('1 - show all data')
         print('2 - show data for specific date')

@@ -8,6 +8,7 @@ class AggregatedMoneyTracker:
         for index,item in enumerate(data):
             date = data[index][0].strip('\n')
             date = data[index][0].strip()
+            
             for index,elem in enumerate(item):
                 elem = elem.strip('\n')
                 elem = elem.split(', ')
