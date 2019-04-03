@@ -2,7 +2,7 @@ from business_card import *
 import unittest
 
 class TestBusinessCard(unittest.TestCase):
-    def test_business_card(self):
+    def test_parsing_json_file(self):
         data = {
     "people": [{
         "first_name": "Ivo",
