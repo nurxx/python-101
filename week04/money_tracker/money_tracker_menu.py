@@ -25,7 +25,7 @@ def menu(money_tracker):
         elif choice is '3':
             money_tracker.show_expenses_ordered_by_subcategories()
         elif choice is '4':
-            money_tracker.show_incomes_in_reversed_order_by_subcategories()
+            money_tracker.show_incomes_in_reverse_order_by_subcategories()
         elif choice is '5':
             amount = input('Amount: ')
             sub_category = input('Subcategory: ')
@@ -36,7 +36,7 @@ def menu(money_tracker):
             for data in user_data:
                 for sub_data in data:
                         if date in sub_data:
-                            data.append('{0}, {1}, New Expense\n'.format(amount,sub_category))
+                            data.append('\n{0}, {1}, New Expense'.format(amount,sub_category))
                             added = True
             if added == False:
                 user_data += [[date,'\n{0}, {1}, New Expense'.format(amount,sub_category)]]
@@ -50,7 +50,7 @@ def menu(money_tracker):
             for data in user_data:
                 for sub_data in data:
                         if date in sub_data:
-                            data.append('{0}, {1}, New Income\n'.format(amount,sub_category))
+                            data.append('\n{0}, {1}, New Income'.format(amount,sub_category))
                             added = True
             if added == False:
                 user_data += [[date,'\n{0}, {1}, New Income'.format(amount,sub_category)]]

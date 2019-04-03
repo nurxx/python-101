@@ -18,3 +18,8 @@
 40000, M, New Income
 === 25-03-2016 ===
 2000, L, New Expense
+=== 24-03-2018 ===
+120, Cat Needs, New Expense40, Cat Food, New Income
+=== 25-02-2018 ===
+14, Dog Needs, New Expense
+12, Dog Food, New Expense

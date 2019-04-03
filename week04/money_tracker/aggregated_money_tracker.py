@@ -19,8 +19,9 @@ class AggregatedMoneyTracker:
     def print_incomes(self):
         for income in self.incomes:
             print(income)
+        return self.incomes
 
     def print_expenses(self):
         for expense in self.expenses:
             print(expense)
-
+        return self.expenses

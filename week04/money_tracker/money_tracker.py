@@ -17,22 +17,28 @@ class MoneyTracker:
         self.aggregated_data.print_expenses()
 
     def show_data_for_specific_date(self,date):
+        result = list()
         for income in self.aggregated_data.incomes:
             if date in income.date:
                 print(income)
+                result.append(income)
         for expense in self.aggregated_data.expenses:
             if date in expense.date:
                 print(expense)
+                result.append(expense)
+        return result
 
     def show_expenses_ordered_by_subcategories(self):
         ordered_expenses = sorted(self.aggregated_data.expenses,key= lambda object: object.sub_category)
         for expense in ordered_expenses:
             print(expense)
+        return ordered_expenses
 
-    def show_incomes_in_reversed_order_by_subcategories(self):
+    def show_incomes_in_reverse_order_by_subcategories(self):
         ordered_incomes = sorted(self.aggregated_data.incomes, key = lambda object: object.sub_category,reverse = True)
         for income in ordered_incomes:
             print(income)
+        return ordered_incomes
 
     def add_new_income(self,amount,sub_category,date):
         self.aggregated_data.incomes += [Income(str(amount),sub_category,date)]
