@@ -1,5 +1,6 @@
 from business_card import *
 import unittest
+import os
 
 class TestBusinessCard(unittest.TestCase):
     def test_parsing_json_file(self):
@@ -120,6 +121,13 @@ class TestBusinessCard(unittest.TestCase):
     def test_business_card_result_files(self):
         expected_files = ['ivo_ivo.html', 'rado_rado.html', 'rosi_rosi.html', 'pavli_pavli.html', 'cherna_ninja.html']
         self.assertEqual(business_card('data.json'),expected_files)
+
+    def test_existance_of_new_files(self):
+        os.path.isfile('./ivo_ivo.html')
+        os.path.isfile('./rado_rado.html')
+        os.path.isfile('./rosi_rosi.html')
+        os.path.isfile('./pavli_pavli.html')
+        os.path.isfile('./cherna_ninja.html')
 
 if __name__ == '__main__':
     unittest.main()
