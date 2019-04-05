@@ -1,0 +1,40 @@
+{
+    "name": "Code",
+    "repeat": true,
+    "shuffle": true,
+    "songs": [
+        {
+            "title": "Odin",
+            "artist": "Manowar",
+            "album": "The sons of Odin",
+            "_length": "1:30:44"
+        },
+        {
+            "title": "Stay",
+            "artist": "Rihanna",
+            "album": "Fenty",
+            "_length": "3:55"
+        },
+        {
+            "title": "Dennis",
+            "artist": "Manowar",
+            "album": "The sons of Odin",
+            "_length": "2:41"
+        },
+        {
+            "title": "Turtle",
+            "artist": "Manowar",
+            "album": "The sons of Odin",
+            "_length": "1:37:44"
+        }
+    ],
+    "current_song_index": 3,
+    "played": [
+        {
+            "title": "Turtle",
+            "artist": "Manowar",
+            "album": "The sons of Odin",
+            "_length": "1:37:44"
+        }
+    ]
+}

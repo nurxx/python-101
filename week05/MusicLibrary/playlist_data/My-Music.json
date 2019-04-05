@@ -1,0 +1,27 @@
+{
+    "name": "My Music",
+    "repeat": false,
+    "shuffle": false,
+    "songs": [
+        {
+            "title": "Sorry",
+            "artist": "Beyonce",
+            "album": "Lemonade",
+            "_length": "4:25"
+        },
+        {
+            "title": "Mockingbird",
+            "artist": "Eminem",
+            "album": "Encore",
+            "_length": "4:18"
+        },
+        {
+            "title": "Fall",
+            "artist": "Eminem",
+            "album": "Kamikaze",
+            "_length": "5:11"
+        }
+    ],
+    "current_song_index": 0,
+    "played": []
+}
