@@ -123,11 +123,11 @@ class TestBusinessCard(unittest.TestCase):
         self.assertEqual(business_card('data.json'),expected_files)
 
     def test_existance_of_new_files(self):
-        os.path.isfile('./ivo_ivo.html')
-        os.path.isfile('./rado_rado.html')
-        os.path.isfile('./rosi_rosi.html')
-        os.path.isfile('./pavli_pavli.html')
-        os.path.isfile('./cherna_ninja.html')
+        self.assertTrue(True,os.path.isfile('./ivo_ivo.html'))
+        self.assertTrue(True,os.path.isfile('./rado_rado.html'))
+        self.assertTrue(True,os.path.isfile('./rosi_rosi.html'))
+        self.assertTrue(True,os.path.isfile('./pavli_pavli.html'))
+        self.assertTrue(True,os.path.isfile('./cherna_ninja.html'))
 
 if __name__ == '__main__':
     unittest.main()

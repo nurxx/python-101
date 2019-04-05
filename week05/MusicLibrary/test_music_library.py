@@ -77,7 +77,7 @@ class TestMusicLibrary(unittest.TestCase):
         self.assertEqual(new_playlist.name,playlist.name)
 
     def test_existance_of_saved_playlists(self):
-        os.path.isdir('./playlist_data')
+        self.assertTrue(True,os.path.isdir('./playlist_data'))
     
 if __name__=='__main__':
     unittest.main()
