@@ -1,1 +1,1 @@
-# python-101
+# Programming-101-with-Python course tasks @HackBulgaria
