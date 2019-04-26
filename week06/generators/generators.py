@@ -29,12 +29,8 @@ def book_reader(directory):
                 if line.startswith('#'):
                     yield line
 
-
-
-
-
 # endless = cycle(range(0,10))
 # for item in endless:
 #     print(item)
 
-print(book_reader('Book'))
+#print(book_reader('Book'))

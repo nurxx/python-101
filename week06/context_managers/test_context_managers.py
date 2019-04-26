@@ -1,8 +1,9 @@
-import unittest 
-from performance import *
-from assert_raises import *
+import unittest
 import time
 import datetime
+from performance import *
+from assert_raises import *
+
 
 class TestContextManagers(unittest.TestCase):
     def test_performance_context_manager(self):

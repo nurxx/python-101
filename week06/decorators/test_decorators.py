@@ -1,5 +1,5 @@
-from decorators import *
 import unittest 
+from decorators import *
 
 class TestDecorators(unittest.TestCase):
     def test_validation_accepts_decorator(self):
