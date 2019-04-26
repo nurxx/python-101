@@ -1,6 +1,7 @@
-from business_card import *
 import unittest
 import os
+from business_card import *
+
 
 class TestBusinessCard(unittest.TestCase):
     def test_parsing_json_file(self):

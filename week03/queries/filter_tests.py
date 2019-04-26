@@ -1,9 +1,9 @@
+import unittest
+
 from filter import *
 from count import *
 from first import *
 from last import *
-
-import unittest
 
 class TestFilter(unittest.TestCase):
     def test_when_filter_by_one_argument(self):

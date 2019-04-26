@@ -1,4 +1,5 @@
 import csv
+
 def find_index(item, filter_keys):
     for index,elem in enumerate(filter_keys):
         if elem == item:

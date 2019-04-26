@@ -1,5 +1,5 @@
-from coding_skills import *
 import unittest 
+from coding_skills import *
 
 class TestCodingSkills(unittest.TestCase):
     def test_file_input(self):

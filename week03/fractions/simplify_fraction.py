@@ -1,9 +1,3 @@
-class ValidationError(Exception):
-    pass
-
-class ZeroDivisionError(Exception):
-    pass
-
 def simplify_fraction(fraction):
     nominator = fraction[0]
     denominator = fraction[1]

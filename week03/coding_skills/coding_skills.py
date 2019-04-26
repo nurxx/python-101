@@ -18,6 +18,7 @@ def coding_skills(file_name):
         output[key] = list(reversed(sorted(output[key])))
         output[key] = output[key][:1]
         print(key + ' - ' + output[key][0][1])
+    return output
 
 def main():
     json_file = sys.argv[1]
