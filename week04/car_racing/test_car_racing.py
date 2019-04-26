@@ -1,6 +1,6 @@
-from race import *
 import unittest
 import os
+from race import *
 
 class TestCarRacing(unittest.TestCase):
     def test_when_initialize_car(self):

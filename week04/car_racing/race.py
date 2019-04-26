@@ -1,5 +1,5 @@
-from car_racing import *
 import sys
+from car_racing import *
 
 def main():
     with open('cars.json','r') as json_file:

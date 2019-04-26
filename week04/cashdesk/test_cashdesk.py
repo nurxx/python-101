@@ -1,11 +1,15 @@
-from cashdesk import *
 import unittest 
+from cashdesk import *
 
 class TestCashDesk(unittest.TestCase):
+    def setUp(self):
+        self.bill= Bill(100)
+        bills= [10,20,50,50,50,100,100]
+        self.batch=BatchBill([Bill(bill) for bill in bills])
+    
     def test_when_initialize_and_print_bill(self):
-        bill = Bill(100)
         expected_result = "A 100$ bill"
-        self.assertEqual(repr(bill),expected_result)
+        self.assertEqual(repr(self.bill),expected_result)
 
     def test_when_validate_input_params_for_bill_with_negative_amount(self):
         with self.assertRaises(ValueError):
@@ -16,9 +20,7 @@ class TestCashDesk(unittest.TestCase):
             bill = Bill('20')
 
     def test_when_compare_two_bills(self):
-        bill_1= Bill(120)
-        bill_2 = Bill(120)
-        self.assertEqual(bill_1,bill_2)
+        self.assertEqual(self.bill,self.bill)
 
     def test_when_initialize_batch_bills_including_non_integer_bill(self):
         bills = [10,20,50,50,80,'20']
@@ -33,40 +35,29 @@ class TestCashDesk(unittest.TestCase):
             batch = BatchBill(batch_bills)
 
     def test_count_bills_in_batch_bill(self):
-        bills= [20,10,10,10,70,90,90]
-        batch=BatchBill([Bill(x) for x in bills])
         expected_result = 7
-        self.assertEqual(len(batch),expected_result)
+        self.assertEqual(len(self.batch),expected_result)
     
     def test_when_getting_total_bills_amount_of_batch_bill(self):
-        values= [10,20,50,100]
-        bills = [Bill(value) for value in values]
-        batch = BatchBill(bills)
-        expected_result = 180
-        self.assertEqual(batch.total(),expected_result)
+        expected_result = 380
+        self.assertEqual(self.batch.total(),expected_result)
 
     def test_when_adding_bill_to_cash_desk(self):
         desk = CashDesk()
-        desk.take_money(Bill(10))
-        expected_result = {Bill(10): 1}
+        desk.take_money(self.bill)
+        expected_result = {Bill(100): 1}
         self.assertEqual(desk.table,expected_result)
 
     def test_when_adding_batch_bills_to_cash(self):
-        values = [10, 20, 50, 100, 100, 100]
-        bills = [Bill(value) for value in values]
-        batch = BatchBill(bills)
         desk = CashDesk()
-        desk.take_money(batch)
-        expected_result = {Bill(10):1,Bill(20):1,Bill(50):1,Bill(100):3}
+        desk.take_money(self.batch)
+        expected_result = {Bill(50):3,Bill(100):2,Bill(10):1,Bill(20):1}
         self.assertEqual(desk.table,expected_result)
 
     def test_when_inspect_cash(self):
-        values = [10, 20, 50, 100, 100, 100]
-        bills = [Bill(value) for value in values]
-        batch = BatchBill(bills)
         desk = CashDesk()
-        desk.take_money(batch)
-        expected_result = {Bill(10):1,Bill(20):1,Bill(50):1,Bill(100):3}
+        desk.take_money(self.batch)
+        expected_result = {Bill(10):1,Bill(20):1,Bill(50):3,Bill(100):2}
         self.assertEqual(desk.table,expected_result)
         
 if __name__=='__main__':

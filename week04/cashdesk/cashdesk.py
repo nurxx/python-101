@@ -1,9 +1,3 @@
-class TypeError(Exception):
-    pass
-
-class ValueError(Exception):
-    pass
-
 class Bill:
     def __init__(self,amount):
         self.validate_init_params(amount)

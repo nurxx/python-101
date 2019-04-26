@@ -1,5 +1,5 @@
-from mixins import *
 import unittest
+from mixins import *
 
 class TestMixins(unittest.TestCase):
     def test_when_parsing_object_to_json(self):

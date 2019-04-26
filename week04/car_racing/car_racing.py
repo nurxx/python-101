@@ -108,4 +108,3 @@ def total_standings(filename):
         score = driver[1]
         print(name,'-',score)
 
-

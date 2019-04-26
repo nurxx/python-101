@@ -1,11 +1,9 @@
-from random import randint
-import operator
-import json
-import os.path
 import os
+import os.path
+import json
+import operator
+from random import randint
 
-class TypeError(Exception):
-    pass
 
 class Song:
     def __init__(self,title,artist,album,length):

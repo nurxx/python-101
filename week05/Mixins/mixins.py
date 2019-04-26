@@ -55,8 +55,8 @@ class Flamingo(Jsonable,Xmlable):
     def __eq__(self,other):
         return len(self.__dict__.items()&other.__dict__.items()) == len(self.__dict__)
 
-
-panda = Panda(name='HackPanda',weight=90,food='code',hobby='sleeping',color='black and white')
-json_string = panda.to_json(0)
-xml_string = panda.to_xml()
-assert Panda.from_json(json_string) == Panda.from_xml(xml_string)
+if __name__== '__main__':
+    panda = Panda(name='HackPanda',weight=90,food='code',hobby='sleeping',color='black and white')
+    json_string = panda.to_json(0)
+    xml_string = panda.to_xml()
+    assert Panda.from_json(json_string) == Panda.from_xml(xml_string)

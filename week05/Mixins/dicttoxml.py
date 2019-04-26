@@ -1,6 +1,3 @@
-from xml.etree.ElementTree import Element
-from xml.etree.ElementTree import tostring
-
 def dicttoxml(tag, dictionary):
     '''
     Turn a simple dict of key/value pairs into XML
