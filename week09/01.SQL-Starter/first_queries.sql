@@ -18,10 +18,8 @@ INSERT INTO MOVIESTAR
 	VALUES('Zahari Baharov','Riot Rd.','M','1989-03-11'); 
 
 
-DELETE FROM studio 
-WHERE name IN (SELECT name
-                FROM studio 
-                WHERE address LIKE '%5%');
+DELETE FROM STUDIO
+WHERE address LIKE '%5%'
 					
 UPDATE movie 
 SET studioname='Fox' 
