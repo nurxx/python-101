@@ -21,7 +21,14 @@ SELECT AVG(price) AS AvgPrice
 FROM pc JOIN product ON pc.model=product.model
 WHERE product.maker LIKE 'A';
 
--- 7
+SELECT AVG(price)
+FROM ( SELECT laptop.price
+       FROM laptop JOIN product ON laptop.model=product.model
+       WHERE product.maker LIKE 'B'
+	UNION
+	SELECT price
+        FROM pc JOIN product ON pc.model=product.model
+        WHERE product.maker LIKE 'B')
 
 SELECT maker
 FROM product
