@@ -39,3 +39,7 @@ __Week08:__
 __Week09:__
 - Databases with sqlite3, litecli
 - Diving into SQL
+
+__Week10:__
+- SQL &/vs Python - working with sqlite3 python lib
+- Database Security basics - backups, SQL injection, user passwords - salt hashing 
