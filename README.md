@@ -43,3 +43,8 @@ __Week09:__
 __Week10:__
 - SQL &/vs Python - working with sqlite3 python lib
 - Database Security basics - backups, SQL injection, user passwords - salt hashing 
+
+__Week11:__
+- Using relational databases & SQL & ORMs.
+- Implementing client-server application
+- Introduction to MVC architecture - [Hospital Manager](https://github.com/nurxx/python-101/tree/master/hospital_manager)
