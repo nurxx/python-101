@@ -47,7 +47,7 @@ __Week10:__
 __Week11:__
 - Using relational databases & SQL & ORMs.
 - Implementing client-server application
-- Introduction to MVC architecture - [Hospital Manager](https://github.com/nurxx/python-101/tree/master/hospital_manager)
+- Introduction to MVC architecture
 
 __Week12:__
 - Introduction to metaprogramming
@@ -57,3 +57,6 @@ __Week13:__
 - OSI and TCP/IP
 - HTTP methods and status codes
 - Request and BeautifulSoup
+
+__Week14:__
+- Django Basics 
